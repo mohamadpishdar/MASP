@@ -16,9 +16,29 @@ fitz.TOOLS.mupdf_display_errors(False)
 # =====================================================
 # API KEYS
 # =====================================================
-GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "AIzaSyAGJZY8-6wWgHC919bYr90hg46Zsz45gX4")
-OPENROUTER_API_KEY = os.environ.get("OPENROUTER_API_KEY", "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")
-ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "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")
+def load_api_keys(path="api_keys.json"):
+    """
+    Loads API keys from a local JSON file instead of hardcoding them in
+    the script. If the file doesn't exist yet, it is created with empty
+    values so the user can fill them in themselves.
+    """
+    defaults = {"GEMINI_API_KEY": "", "OPENROUTER_API_KEY": "", "ANTHROPIC_API_KEY": ""}
+    if not os.path.exists(path):
+        with open(path, "w", encoding="utf-8") as jf:
+            json.dump(defaults, jf, indent=2)
+        return defaults
+    try:
+        with open(path, "r", encoding="utf-8") as jf:
+            loaded = json.load(jf)
+        defaults.update(loaded)
+        return defaults
+    except Exception:
+        return defaults
+
+_api_keys = load_api_keys()
+GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", _api_keys["GEMINI_API_KEY"])
+OPENROUTER_API_KEY = os.environ.get("OPENROUTER_API_KEY", _api_keys["OPENROUTER_API_KEY"])
+ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", _api_keys["ANTHROPIC_API_KEY"])
 
 # =====================================================
 # STREAMLIT INIT

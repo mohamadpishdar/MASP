@@ -23,20 +23,41 @@ if "token_usage" not in st.session_state:
 # ======================================================
 # Sidebar - API Keys
 # ======================================================
+def load_api_keys(path="api_keys.json"):
+    """
+    Loads API keys from a local JSON file instead of hardcoding them in
+    the script. If the file doesn't exist yet, it is created with empty
+    values so the user can fill them in themselves.
+    """
+    defaults = {"GEMINI_API_KEY": "", "OPENROUTER_API_KEY": "", "ANTHROPIC_API_KEY": ""}
+    if not os.path.exists(path):
+        with open(path, "w", encoding="utf-8") as jf:
+            json.dump(defaults, jf, indent=2)
+        return defaults
+    try:
+        with open(path, "r", encoding="utf-8") as jf:
+            loaded = json.load(jf)
+        defaults.update(loaded)
+        return defaults
+    except Exception:
+        return defaults
+
+_api_keys = load_api_keys()
+
 st.sidebar.header("API Keys")
 openrouter_api_key = st.sidebar.text_input(
     "OpenRouter API Key",
-    value=os.environ.get("OPENROUTER_API_KEY", ""),
+    value=_api_keys.get("OPENROUTER_API_KEY", ""),
     type="password"
 )
 gemini_api_key = st.sidebar.text_input(
     "Gemini API Key",
-    value=os.environ.get("GEMINI_API_KEY", ""),
+    value=_api_keys.get("GEMINI_API_KEY", ""),
     type="password"
 )
 anthropic_api_key = st.sidebar.text_input(
     "Claude (Anthropic) API Key",
-    value=os.environ.get("ANTHROPIC_API_KEY", ""),
+    value=_api_keys.get("ANTHROPIC_API_KEY", ""),
     type="password"
 )
 
