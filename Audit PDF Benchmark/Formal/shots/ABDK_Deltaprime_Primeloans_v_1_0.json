@@ -1,0 +1,12 @@
+{
+  "filename": "ABDK_Deltaprime_Primeloans_v_1_0.pdf",
+  "project_identity": "Primeloans",
+  "auditor": "ABDK",
+  "high_vulnerability_count": 5,
+  "medium_vulnerability_count": 0,
+  "low_vulnerability_count": 0,
+  "commit_hash": "f9fc6b58aca36ba4eaa251de5d3b5dc9426ed49d",
+  "year": 2024,
+  "fixed_items": "5",
+  "first_vulnerability_title": "N/A"
+}

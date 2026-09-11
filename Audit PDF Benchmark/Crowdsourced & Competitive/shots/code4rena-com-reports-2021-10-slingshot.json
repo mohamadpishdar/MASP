@@ -1,0 +1,12 @@
+{
+  "filename": "code4rena-com-reports-2021-10-slingshot.pdf",
+  "project_identity": "N/A",
+  "auditor": "Code4Arena",
+  "high_vulnerability_count": 0,
+  "medium_vulnerability_count": 2,
+  "low_vulnerability_count": 12,
+  "commit_hash": "N/A",
+  "year": 2021,
+  "fixed_items": "N/A",
+  "first_vulnerability_title": "initialBalance for native token is wrong"
+}

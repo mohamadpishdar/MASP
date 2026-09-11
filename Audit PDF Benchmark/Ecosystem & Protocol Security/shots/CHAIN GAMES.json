@@ -1,0 +1,12 @@
+{
+  "filename": "CHAIN GAMES.pdf",
+  "project_identity": "CHAIN GAMES",
+  "auditor": "Hacken",
+  "high_vulnerability_count": 0,
+  "medium_vulnerability_count": 1,
+  "low_vulnerability_count": 1,
+  "commit_hash": "N/A",
+  "year": 2020,
+  "fixed_items": "0",
+  "first_vulnerability_title": "It strongly recommended using SafeMath in calculations to prevent overflows"
+}

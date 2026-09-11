@@ -1,0 +1,21 @@
+﻿,filename,project_identity,auditor,high_vulnerability_count,medium_vulnerability_count,low_vulnerability_count,commit_hash,year,fixed_items,first_vulnerability_title,_input_tokens,_output_tokens,_api_attempts
+0,Amara.pdf,Amara,Hacken,3,7,2,6c0507f,2025,11,Double Division and Rounding in _calculateEarlyExitPenalty() Zeroes principalHaircut Nullifying the Intended Early-Exit Penalty,21803,163,1
+1,Astra Nova.pdf,Astra Nova,Hacken,0,0,1,373989d4ea6e07be8c6fdc2cfc05e2247793d19f,2025,1,setTransferAllowedTimestamp Logic Permanently Locks Timestamp Updates After 1 Day Past TGE,20987,173,1
+2,Aurora.pdf,Aurora Rainbow Bridge ETH2 Client,Sigma Prime,1,2,10,50427ed,2023,9,Skipped Slots Cause Relayer to Stall,24094,156,1
+3,Bartercard.pdf,Bartercard Qoin Token,Sigma,0,0,1,04f3f64be531b0a1c2c29b638b2ae26b79acfeb9,,0,Permissive Access Control Model,21790,162,1
+4,BullBit.pdf,Adpriva,Hacken,0,0,0,411fa915898be15c59209d0a4704de8c305a8061,2026,0,,20364,143,1
+5,certificate-quantstamp-com-full-humanity-token-f83880c2-91d9-452c-819a-0baf7c1ac.pdf,Humanity Token,Quantstamp,0,0,0,b1ac8df,2025,0,Secrets in Configuration File,22259,132,1
+6,certificate-quantstamp-com-full-sapien-ffb7e698-6178-46f0-8df8-52e537af70c0-inde.pdf,Sapien,Quantstamp,2,6,6,c05fcbb,2025,9,Missing Balance Deduction in Unstaking Functions Allows Contract Drainage and Lock Period Bypass,21227,160,1
+7,certificate-quantstamp-com-full-sequence-identity-document-c4ab27f1-1427-4862-8e.pdf,Sequence Identity Document,Quantstamp,9,15,6,7bd5446,2025,25,JWT Token Validation and Verification Are Explicitly Disabled,20660,151,1
+8,certificate-quantstamp-com-full-tac-merkl-proxy-7824deb4-e8ab-41d6-a8c9-08cef490.pdf,TAC Merkl Proxy,Quantstamp,0,2,2,00f4392,2025,4,Withdrawn Tokens Can Be Lost if Not Included for Bridging,22583,159,1
+9,certificate-quantstamp-com-full-token-ops-3-airdrop-23f2fc7c-6c0e-4ac7-8d7c-9516.pdf,TokenOps Airdrop,Quantstamp,0,1,4,0d853fc,2025,5,Missing Access Control Allows Users to Bypass Fees,22317,157,1
+10,certificate-quantstamp-com-full-token-ops-3-staking-8ab84b1e-f47d-4da9-996f-5781.pdf,TokenOps 3 - Staking,Quantstamp,0,1,4,9e0677c,2025,4,DoS While Calculating Rewards,22374,136,1
+11,Dirol.pdf,Dirol,Hacken,6,3,6,4bb80a4,2025,15,Native Input Routed as Zero for Native-Send Routes,21568,138,1
+12,Dlicom.pdf,Dlicom,Hacken,0,1,0,c1bd927,2026,0,Overprivileged Token Burning Capacity,20954,138,1
+13,OPSEK.pdf,Opsek Hardening Scripts,Sigma,0,0,15,481bc29,2026,15,Mishandled DNS Configuration In Windows Hardening Script,23562,158,1
+14,renzo.pdf,Renzo Restaking,Sigma,6,4,5,bb1dc9e,2024,8,Re-entrancy Modifier Misuse Causes Lost ETH,22959,162,1
+15,Sigma_Prime_Botanix_Macbeth_Security_Assessment_Report_v2_1.pdf,Botanix Macbeth,Sigma Prime,20,3,5,3a5bb70,2025,21,Peg-In Amounts May Be Stolen By Manipulating tx.gasprice,24091,162,1
+16,Sigma_Prime_Igra_Core_Smart_Contracts_Security_Assessment_Report_v2_1.pdf,Igra Core Smart Contracts,Sigma Prime,0,1,3,f24c22a,2026,4,Inverted Time Check Allows Only Past Schedule Updates,23051,159,1
+17,Sigma_Prime_Rise_Core_Node_Security_Assessment_Report_v2_0.pdf,RISE Core Node,Sigma Prime,3,4,9,1a871bc5,2025,9,EIP-2935 Storage Reads Result In Consensus Failure,23177,156,1
+18,Store Labs.pdf,Store Labs Store Token,Sigma,0,0,0,N/A,,0,Missing Ownership Mechanism,21965,122,1
+19,Sushi Swap.pdf,Sushi SushiXSwap and StablePool,Sigma,5,4,3,4888a49,,1,Wrong Balance Checked Before Withdrawal,22961,159,1

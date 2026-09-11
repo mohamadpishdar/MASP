@@ -1,0 +1,13 @@
+
+{
+  "filename": "Spin Finance Final Audit.pdf",
+  "project_identity": "Spin.Finance Decentralized Exchange",
+  "auditor": "BlockApex",
+  "high_vulnerability_count": 5,
+  "medium_vulnerability_count": 1,
+  "low_vulnerability_count": 4,
+  "commit_hash": "549bce99171d0fe5473075937f76310348b2dca2",
+  "year": 2022,
+  "fixed_items": "5",
+  "first_vulnerability_title": "Swap: Logic Flaw in set_availability() will lead wrong state of the market been set"
+}

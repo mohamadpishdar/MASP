@@ -1,0 +1,12 @@
+{
+  "filename": "www-halborn-com-audits-moonwell-smart-contract-assessment.pdf",
+  "project_identity": "Moonwell",
+  "auditor": "Halborn",
+  "high_vulnerability_count": 1,
+  "medium_vulnerability_count": 0,
+  "low_vulnerability_count": 0,
+  "commit_hash": "e1e113f5bbc5f10b3299f0820507e409f0cd4de6",
+  "year": 2022,
+  "fixed_items": "1",
+  "first_vulnerability_title": "MISSING QUORUM CAP COMPARISON CAN BREAK THE GOVERNANCE"
+}

@@ -1,0 +1,12 @@
+{
+  "filename": "www-openzeppelin-com-news-claimvault-security-audit-1.pdf",
+  "project_identity": "ClaimVault Security",
+  "auditor": "Openzeppelin",
+  "high_vulnerability_count": 0,
+  "medium_vulnerability_count": 1,
+  "low_vulnerability_count": 1,
+  "commit_hash": "3413ed5",
+  "year": 2026,
+  "fixed_items": "2",
+  "first_vulnerability_title": "Possible Cross-Contract Signature Replay Attack"
+}

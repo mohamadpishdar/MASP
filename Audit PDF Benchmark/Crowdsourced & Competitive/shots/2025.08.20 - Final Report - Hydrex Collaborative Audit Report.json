@@ -1,0 +1,13 @@
+
+{
+  "filename": "2025.08.20 - Final Report - Hydrex Collaborative Audit Report.pdf",
+  "project_identity": "Hydrex",
+  "auditor": "Sherlock",
+  "high_vulnerability_count": 4,
+  "medium_vulnerability_count": 2,
+  "low_vulnerability_count": 7,
+  "commit_hash": "da0bef71cfb7995d81b2d827a556221d2a69a2af",
+  "year": 2025,
+  "fixed_items": "N/A",
+  "first_vulnerability_title": "voting can be manipulated"
+}

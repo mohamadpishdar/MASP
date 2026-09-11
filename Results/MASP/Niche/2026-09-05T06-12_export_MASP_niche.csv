@@ -1,0 +1,13 @@
+﻿,filename,project_identity,auditor,high_vulnerability_count,medium_vulnerability_count,low_vulnerability_count,commit_hash,year,fixed_items,first_vulnerability_title
+0,Advon Smart Contract Audit Report - QuillAudits.pdf,Advon,QuillAudits,3,4,1,,2023,0,Centralization Risk
+1,Ai Fun Token Contract Audit Report - QuillAudits.pdf,Ai Fun,QuillAudits,0,0,0,,2024,0,
+2,Alfcoin Smart Contract Audit Report - QuillAudits.pdf,Alfcoin,QuillAudits Team,0,0,0,,2021,0,
+3,AliumSwap Smart Contract Audit Report - QuillAudits.pdf,AliumSwap,QuillAudits,0,0,2,6aff4c5ad4695b77358eae0627c98d72621256bc,2022,0,Missing two step process to change privileged role Owner
+4,Alkimi Token Gen Smart Contract Audit Report - QuillAudits.pdf,Alkimi,QuillAudits,0,0,0,00dfc26d2a81f8c6fdffe744ddca92ff9a62bb1e,2025,0,
+5,Jump Defi Audit Report.pdf,Jump Defi Decentralized Finance Platform,BlockApex,7,4,4,ddb92dda6eb779ac854471eeda817abeacfc054e,2022,0,Improper access controls leads to liquidity theft
+6,Light Link Humming Bird.pdf,LIGHTLINK HUMMINGBIRD,BlockApex,0,0,0,7726b3cad0e375915747a253c5c50c62743d9f6f,2024,0,
+7,Mittaria Protocol Final Audit Report.pdf,Mittaria,BlockApex,1,1,2,,2023,4,Redundant and Risky Withdrawal Mechanism
+8,PhoenixDAO LP Staking Final Audit.pdf,PhoenixDAO,BlockApex,2,2,1,3aec9851bd517e9e8da4d72193367cfa9f6cc863,2021,1,User can withdraw the amount even if the actual deposit didn't happen
+9,Unipilot L2 Final Audit.pdf,Unipilot,BlockApex,0,1,5,fe0ee0bfa5f7cdea43575fb994cfe8aec6249bbc,2023,3,Inconsistent specification and implementation
+10,Unipilot Staking Final Audit.pdf,Unipilot Staking,BlockApex,3,2,1,,2022,5,Pending rewards for the previous reward token are getting lost
+11,Yamato Protocol Final Audit.pdf,Yamato Stablecoin Lending,BlockApex,2,3,8,,2022,13,Potential classic frontrunning attack

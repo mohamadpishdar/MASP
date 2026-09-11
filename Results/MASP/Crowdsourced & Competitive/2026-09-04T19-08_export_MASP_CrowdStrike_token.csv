@@ -1,0 +1,5 @@
+﻿,Role,Model,Calls,Input Tokens,Output Tokens,Total Tokens
+0,Miner 1,gemini/gemini-2.5-flash,25,306897,19165,326062
+1,Miner 2,openrouter/meta-llama/llama-3.3-70b-instruct,24,262060,11062,273122
+2,Miner 3,claude/claude-sonnet-5,28,500138,81278,581416
+3,Judge,gemini/gemini-2.5-flash,24,226486,35408,261894

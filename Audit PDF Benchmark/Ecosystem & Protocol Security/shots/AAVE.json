@@ -1,0 +1,12 @@
+{
+  "filename": "AAVE.pdf",
+  "project_identity": "Aave Protocol v3",
+  "auditor": "Sigma",
+  "high_vulnerability_count": 0,
+  "medium_vulnerability_count": 0,
+  "low_vulnerability_count": 3,
+  "commit_hash": "e76882a",
+  "year": null,
+  "fixed_items": "3",
+  "first_vulnerability_title": "setEModeCategory() Invalid Parameters"
+}

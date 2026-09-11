@@ -1,0 +1,13 @@
+﻿,filename,project_identity,auditor,high_vulnerability_count,medium_vulnerability_count,low_vulnerability_count,commit_hash,year,fixed_items,first_vulnerability_title,_input_tokens,_output_tokens,_api_attempts
+0,Anza Solana BPF - Zellic Audit Report.pdf,Solana core BPF programs,Zellic,0,0,0,,2024,N/A,N/A,13916,140,1
+1,Audius EVM - Zellic Audit Report.pdf,Audius,Zellic,1,3,1,bda973856efc8b9144606d7952ea6a59e0d2bcca,2022,N/A,Voting can potentially be influenced via restaking,14301,172,1
+2,Axiom October - Zellic Audit Report.pdf,Axiom,"Zellic, KALOS",4,1,0,91a983d64407e16d24825be990155b701a722cdc,2023,N/A,The verify_field_hash function has incorrect Merkle proof–verification logic,14939,191,1
+3,Beefy UniswapV3 - Zellic Audit Report.pdf,Beefy UniswapV3,Zellic,3,2,5,9b54aee1d8098966f582d67ff054e011897c5f30,2024,N/A,"Price deviation for calm period detection is done by exponentiating, not multiplying",14350,188,1
+4,Biconomy Account Recovery Module - Zellic Audit Report-II.pdf,AccountRecoveryModule,Zellic,0,1,1,13893770a3c76b7fa95ed69197ea38ce7869dbfc,2024,N/A,Incorrect calldata deserialization,14316,170,1
+5,Celo-Smart-Contract-Audit-Report-Final-Report-v2.pdf,Celo,Hashlock,0,1,3,a3c350a23ed3aade246a2bb0a93ec53a7607a5be,2025,4,N/A,13574,154,1
+6,Energy-Web-Ethereum-Bridge-and-EWT-ERC20-Token-Smart-Contracts-Audit-Report-Final-Report-v5.pdf,The Energy Web Foundation,Hashlock,1,1,4,f8acf620fd2ccae3274b556b4693cd5bb98ad700,2025,6,N/A,13409,165,1
+7,SatLayer-Smart-Contract-Audit-Report-Final-Report-v2.pdf,SatLayer,Hashlock,2,2,2,73c8b49b0dd11f9a9f9325478c9c7ada145ca6ac,2025,6,N/A,13372,164,1
+8,Umbrae-Smart-Contract-Audit-Report-Final-Report-v2.pdf,Umbrae,Hashlock,3,7,7,e1e113f5bbc5f10b3299f0820507e409f0cd4de6,2026,17,N/A,13615,168,1
+9,www-halborn-com-audits-perle-labs-prl-token.pdf,PRL Token,Halborn,0,0,0,,2026,0,N/A,14022,143,1
+10,www-halborn-com-audits-zero-gravity-labs-dollylocker.pdf,DollyLocker & Agent NFT,Halborn,0,1,5,c5a0417,2026,6,OVERPAYMENT NOT REFUNDED IN MINT FUNCTIONS,12936,154,1
+11,www-halborn-com-audits-zkpass-zkpass-token-contract.pdf,zkPass Token Contract,Halborn,0,0,0,5abbef5,2025,N/A,N/A,16839,139,1

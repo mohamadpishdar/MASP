@@ -1,0 +1,12 @@
+{
+  "filename": "code4rena-com-reports-2025-09-monad.pdf",
+  "project_identity": "Monad",
+  "auditor": "Code4Arena",
+  "high_vulnerability_count": 4,
+  "medium_vulnerability_count": 7,
+  "low_vulnerability_count": 21,
+  "commit_hash": "020cb9ed751480cf79ad334ab36a6ecd606235e7",
+  "year": 2025,
+  "fixed_items": "N/A",
+  "first_vulnerability_title": "Block policy discounts gas price by incorrectly applying EIP-1559 to legacy transactions"
+}

@@ -1,0 +1,12 @@
+{
+  "filename": "Sigma_Prime_Berachain_Reth_Geth_Security_Assessment_Report_v2_0.pdf",
+  "project_identity": "Berachain bera-reth & bera-geth",
+  "auditor": "Sigma",
+  "high_vulnerability_count": 4,
+  "medium_vulnerability_count": 1,
+  "low_vulnerability_count": 5,
+  "commit_hash": "688d070 and 53363e4",
+  "year": 2025,
+  "fixed_items": "9",
+  "first_vulnerability_title": "Inconsistent PoL Transaction Validation Before Prague1"
+}

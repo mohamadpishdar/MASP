@@ -1,0 +1,13 @@
+
+{
+  "filename": "Meta Pool Stable Verde EVM.pdf",
+  "project_identity": "Meta Pool",
+  "auditor": "BlockApex",
+  "high_vulnerability_count": 6,
+  "medium_vulnerability_count": 2,
+  "low_vulnerability_count": 5,
+  "commit_hash": "62b94c2404f8d7302d1daf2b42f1be07bd352ce3",
+  "year": 2025,
+  "fixed_items": "7",
+  "first_vulnerability_title": "Verde Token $1 USD Peg Assumption Creates Systemic Protocol Risk"
+}

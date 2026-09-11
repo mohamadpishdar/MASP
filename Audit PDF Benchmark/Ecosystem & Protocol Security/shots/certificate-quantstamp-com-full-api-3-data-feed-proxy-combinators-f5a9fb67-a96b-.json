@@ -1,0 +1,12 @@
+{
+  "filename": "certificate-quantstamp-com-full-api-3-data-feed-proxy-combinators-f5a9fb67-a96b-.pdf",
+  "project_identity": "API3 Data Feed Proxy Combinators",
+  "auditor": "Quantstamp",
+  "high_vulnerability_count": 0,
+  "medium_vulnerability_count": 2,
+  "low_vulnerability_count": 1,
+  "commit_hash": "3503ca8",
+  "year": 2025,
+  "fixed_items": "0",
+  "first_vulnerability_title": "Silent Truncation on int224 Cast without Bounds Checks"
+}

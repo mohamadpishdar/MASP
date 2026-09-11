@@ -1,0 +1,12 @@
+{
+  "filename": "Safeheron_Crypto_Suites__Multiparty_ECDSA_Updated_Final_Audit_Report_Least_Authority.pdf",
+  "project_identity": "Safeheron",
+  "auditor": "Least Authority",
+  "high_vulnerability_count": "N/A",
+  "medium_vulnerability_count": "N/A",
+  "low_vulnerability_count": "N/A",
+  "commit_hash": "02641725e3448065a02dfa004f40fb266b14a007",
+  "year": 2024,
+  "fixed_items": "3",
+  "first_vulnerability_title": "Length Field in CSafeHash256/512::Write Can Overflow"
+}

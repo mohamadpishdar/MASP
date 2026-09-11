@@ -1,0 +1,17 @@
+﻿,filename,project_identity,auditor,high_vulnerability_count,medium_vulnerability_count,low_vulnerability_count,commit_hash,year,fixed_items,first_vulnerability_title,_input_tokens,_output_tokens,_api_attempts
+0,2022-09-subspacenetwork-subspacenetworkdesktopfarmer-securityreview.pdf,"Subspace Network, Subspace Desktop",Trail of Bits,1,2,4,6a42e94e4a54f09a8bb1c6235cb1967faa2b6676,2022,0,Insufficient privilege separation between the front end and back end,3069,161,1
+1,2023-09-solana-solang-parser-semantic-analysis-securityreview.pdf,Solang Parser and Semantic Analysis,Trail of Bits,0,0,1,52879197d1cbc0e83c1b44de70639256d73de105,2023,0,Risk of arithmetic underflow in lexer,3663,152,1
+2,2025-12-offchain-arbitrum-chains-genesis-generator-securityreview.pdf,Offchain Labs Arbitrum Chains Genesis File Generator,Trail of Bits,0,0,0,59f69a966d343f089d106c931f2ce9c7ee1218d6,2025,0,Unclear whether Arbitrum-specific behavior of Solidity opcodes should be used,2835,168,1
+3,2026-01-calyx-hsm-provisioning-ceremony-scripts-securityreview.pdf,Calyx Institute HSM Provisioning Ceremony Scripts,Trail of Bits,0,1,0,,2026,1,Factory reset verifications are insufficient to prevent rogue admin keys,4162,141,1
+4,2026-01-offchain-nitro-external-da-securityreview.pdf,Offchain Labs Arbitrum Nitro External DA,Trail of Bits,0,0,2,3f226a0ecf91ceed3688a2fc41969fae1f32d03d,2026,0,Missing validations in executeValidatePreimage,3620,160,1
+5,ABDK_Algebra_AlgebraProtocol_v_3_0.pdf,Algebra Protocol,ABDK Consulting (Mikhail Vladimirov and Dmitry Khovratovich),1,0,0,,2023,1,,16367,135,1
+6,ABDK_Relevant_Solidity_v_1_0 - Copy.pdf,Relevant,ABDK Consulting,4,4,0,c175a52,2021,4,CVF-29,4395,125,1
+7,Capsule_Signing_and_Permissioning_Toolkit_Updated_2.pdf,Capsule Signing and Permissioning Toolkit,Least Authority TFA GmbH,0,0,0,ba66396b6f94e0e5d54b9aacfba45c25cc93cbe1,2024,9,Secret Used to Encrypt Shares Sent Over Network,6806,168,1
+8,Dragon Token Contract_ Review.pdf,DragonCoin Token Contract,ABDK Consulting,3,2,0,,2017,5,burnFrom does not decrease the allowance,2942,129,1
+9,Least-Authority-Linea-zkEVM-Limitless-Prover-Final-Audit-Report.pdf,Limitless Prover / Linea zkEVM,Least Authority TFA GmbH,0,0,0,b79456551aad55b8fb5f83950f12fe8863d78ad6,2025,0,,5287,153,1
+10,Least-Authority-TACEO-OPRF-Noir-Circuits-Final-Audit-Report.pdf,OPRF Noir Circuits by TACEO,Least Authority TFA GmbH,3,0,0,aaf0c8886b03b26ad483f97cc5403c37b89f7fad,2026,3,Nullifier Malleability From Missing Subgroup Checks in Unblinding,6297,195,1
+11,www-openzeppelin-com-news-broadcaster-pushers-audit.pdf,Broadcaster Pushers Audit,OpenZeppelin,0,0,4,e329d3a,2026,3,Linea Pusher Allows Value Mismatch Creating Permanently Unclaimable Messages,5273,147,1
+12,www-openzeppelin-com-news-linea-yield-manager-audit.pdf,Linea Yield Manager,OpenZeppelin,1,7,22,4360e31f,2026,22,Duplicate Validator Requests DoS Permissionless Unstaking,5516,139,1
+13,www-openzeppelin-com-news-openzeppelin-uniswap-hooks-v1-1-0-rc-1-audit.pdf,OpenZeppelin Uniswap Hooks v1.1.0 RC 1,OpenZeppelin Security / Research,11,4,1,0879747,2025,0,JIT Liquidity Penalty Can Be Bypassed,5747,151,1
+14,www-openzeppelin-com-news-sponsored-periphery-audit.pdf,Sponsored Periphery Audit / UMAprotocol across-contracts-private,OpenZeppelin,4,5,11,ec9bd79,2025,17,Incorrect Additional Amount to Send in Sponsored Swaps,6488,147,1
+15,www-openzeppelin-com-news-uma-and-across-incremental-audit.pdf,UMA and Across Incremental Audit,OpenZeppelin,0,2,5,e6df750,2026,5,Invalid destinationDex Can Strand Non-USDC Bridged Funds on Hypercore,5995,149,1

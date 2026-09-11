@@ -1,0 +1,17 @@
+﻿,filename,project_identity,auditor,high_vulnerability_count,medium_vulnerability_count,low_vulnerability_count,commit_hash,year,fixed_items,first_vulnerability_title,_input_tokens,_output_tokens,_api_attempts
+0,2022-09-subspacenetwork-subspacenetworkdesktopfarmer-securityreview.pdf,"Subspace Network, Subspace Desktop",Trail of Bits,1,2,4,6a42e94e4a54f09a8bb1c6235cb1967faa2b6676,2022,,,32859,157,1
+1,2023-09-solana-solang-parser-semantic-analysis-securityreview.pdf,Solang Parser and Semantic Analysis,Trail of Bits,0,0,1,52879197d1cbc0e83c1b44de70639256d73de105,2023,0,N/A,33618,161,1
+2,2025-12-offchain-arbitrum-chains-genesis-generator-securityreview.pdf,Arbitrum Chains Genesis File Generator,Trail of Bits,0,0,0,59f69a966d343f089d106c931f2ce9c7ee1218d6,2025,N/A,Unclear whether Arbitrum-specific behavior of Solidity opcodes should be used,32852,177,1
+3,2026-01-calyx-hsm-provisioning-ceremony-scripts-securityreview.pdf,Calyx Institute HSM Provisioning Ceremony Scripts,Trail of Bits,0,1,0,,2026,,Factory reset verifications are insufficient to prevent rogue admin keys,34713,163,1
+4,2026-01-offchain-nitro-external-da-securityreview.pdf,Offchain Labs Arbitrum Nitro External DA,Trail of Bits,0,0,2,3f226a0ecf91ceed3688a2fc41969fae1f32d03d,2026,N/A,Missing validations in executeValidatePreimage,33567,185,1
+5,ABDK_Algebra_AlgebraProtocol_v_3_0.pdf,Algebra Protocol,ABDK,13,35,75,,2023,55,N/A,46527,138,1
+6,ABDK_Relevant_Solidity_v_1_0 - Copy.pdf,Relevant,ABDK,4,4,26,c175a52,2021,34,Flaw,34547,127,1
+7,Capsule_Signing_and_Permissioning_Toolkit_Updated_2.pdf,Capsule,Least Authority,N/A,N/A,N/A,52df9fcfd365baac436d155ebda99c3e7833e8cb,2024,9,Secret Used to Encrypt Shares Sent Over Network,36650,192,1
+8,Dragon Token Contract_ Review.pdf,DragonCoin,ABDK Consulting,3,2,0,,2017,2,burnFrom does not decrease the allowance,33005,134,1
+9,Least-Authority-Linea-zkEVM-Limitless-Prover-Final-Audit-Report.pdf,Linea zkEVM Limitless Prover,Least Authority,0,0,0,b79456551aad55b8fb5f83950f12fe8863d78ad6,2025,N/A,N/A,35075,186,1
+10,Least-Authority-TACEO-OPRF-Noir-Circuits-Final-Audit-Report.pdf,TACEO,Least Authority,3,0,0,aaf0c8886b03b26ad483f97cc5403c37b89f7fad,2026,3,Nullifier Malleability From Missing Subgroup Checks in Unblinding,35995,187,1
+11,www-openzeppelin-com-news-broadcaster-pushers-audit.pdf,Broadcaster Pushers,OpenZeppelin,0,0,4,e329d3a,2026,3,Missing Zero-Address Check in Linea and Scroll Buffer Constructors,35078,139,1
+12,www-openzeppelin-com-news-linea-yield-manager-audit.pdf,Linea Yield Manager,Openzeppelin,1,7,22,4360e31f,2026,22,Duplicate Validator Requests DoS Permissionless Unstaking,35219,149,1
+13,www-openzeppelin-com-news-openzeppelin-uniswap-hooks-v1-1-0-rc-1-audit.pdf,OpenZeppelin Uniswap Hooks,OpenZeppelin,11,4,1,0879747,2025,0,JIT Liquidity Penalty Can Be Bypassed,35469,163,1
+14,www-openzeppelin-com-news-sponsored-periphery-audit.pdf,Sponsored Periphery Audit,OpenZeppelin,4,5,11,ec9bd79,2025,17,Incorrect Additional Amount to Send in Sponsored Swaps,35982,137,1
+15,www-openzeppelin-com-news-uma-and-across-incremental-audit.pdf,UMA and Across,OpenZeppelin,0,2,5,e6df750,2026,5,Invalid destinationDex Can Strand Non-USDC Bridged Funds on Hypercore,35555,159,1

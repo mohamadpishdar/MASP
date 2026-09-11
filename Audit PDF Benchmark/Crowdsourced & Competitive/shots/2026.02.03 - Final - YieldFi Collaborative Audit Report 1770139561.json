@@ -1,0 +1,12 @@
+{
+  "filename": "2026.02.03 - Final - YieldFi Collaborative Audit Report 1770139561.pdf",
+  "project_identity": "YieldFi",
+  "auditor": "Sherlock",
+  "high_vulnerability_count": 0,
+  "medium_vulnerability_count": 8,
+  "low_vulnerability_count": 9,
+  "commit_hash": "19ceb0047fc10660e95519072c8760b3a8033bb1",
+  "year": 2026,
+  "fixed_items": "N/A",
+  "first_vulnerability_title": "Cannot add a user to greenlist of the global vault [RESOLVED]"
+}

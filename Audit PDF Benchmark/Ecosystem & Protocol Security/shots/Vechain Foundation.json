@@ -1,0 +1,12 @@
+{
+  "filename": "Vechain Foundation.pdf",
+  "project_identity": "Vechain Foundation",
+  "auditor": "Hacken",
+  "high_vulnerability_count": 5,
+  "medium_vulnerability_count": 4,
+  "low_vulnerability_count": 3,
+  "commit_hash": "74f2662",
+  "year": 2026,
+  "fixed_items": "11",
+  "first_vulnerability_title": "Exited Delegator Receives Rewards"
+}

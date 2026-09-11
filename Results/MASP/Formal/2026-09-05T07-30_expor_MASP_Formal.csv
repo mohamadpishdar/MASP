@@ -1,0 +1,17 @@
+﻿,filename,project_identity,auditor,high_vulnerability_count,medium_vulnerability_count,low_vulnerability_count,commit_hash,year,fixed_items,first_vulnerability_title
+0,2022-09-subspacenetwork-subspacenetworkdesktopfarmer-securityreview.pdf,Subspace Desktop,Trail of Bits,1,2,4,6a42e94e4a54f09a8bb1c6235cb1967faa2b6676,2022,N/A,Insuﬃcient privilege separation between the front end and back end
+1,2023-09-solana-solang-parser-semantic-analysis-securityreview.pdf,Solang Parser and Semantic Analysis,Trail of Bits,0,0,1,52879197d1cbc0e83c1b44de70639256d73de105,2023,0,Risk of arithmetic underflow in lexer
+2,2025-12-offchain-arbitrum-chains-genesis-generator-securityreview.pdf,Genesis File Generator,Trail of Bits,0,0,0,59f69a966d343f089d106c931f2ce9c7ee1218d6,2025,0,N/A
+3,2026-01-calyx-hsm-provisioning-ceremony-scripts-securityreview.pdf,Calyx Institute,Trail of Bits,0,1,0,,2026,1,Factory reset verifications are insufficient to prevent rogue admin keys
+4,2026-01-offchain-nitro-external-da-securityreview.pdf,Arbitrum Nitro External DA,Trail of Bits,0,0,2,3f226a0ecf91ceed3688a2fc41969fae1f32d03d,2026,2,Missing sequencer message length checks
+5,ABDK_Algebra_AlgebraProtocol_v_3_0.pdf,Algebra Protocol,ABDK Consulting,13,35,75,,2023,123,N/A
+6,ABDK_Relevant_Solidity_v_1_0 - Copy.pdf,Relevant,ABDK,4,0,0,c175a52,2021,4,N/A
+7,Capsule_Signing_and_Permissioning_Toolkit_Updated_2.pdf,Capsule,Least Authority,0,0,0,ba66396b6f94e0e5d54b9aacfba45c25cc93cbe1,2024,9,Secret Used to Encrypt Shares Sent Over Network
+8,Dragon Token Contract_ Review.pdf,DragonCoin,ABDK Consulting,3,2,0,,2017,2,"Method burnFrom does not decrease the allowance, so that it is possible for Bob to deplete the balance of Alice if Alice’s allowance to Bob is at least one token"
+9,Least-Authority-Linea-zkEVM-Limitless-Prover-Final-Audit-Report.pdf,Linea zkEVM,Least Authority,0,0,0,f2486950df0f1fa8a8b9af376bbc5f204274d319,2025,0,N/A
+10,Least-Authority-TACEO-OPRF-Noir-Circuits-Final-Audit-Report.pdf,TACEO,Least Authority,3,0,0,50798b402e81ed3726674746c8c36dc7ef0931ee,2026,3,Nullifier Malleability From Missing Subgroup Checks in Unblinding
+11,www-openzeppelin-com-news-broadcaster-pushers-audit.pdf,Broadcaster Pushers,Openzeppelin,0,0,4,e329d3a,2026,3,Missing Zero-Address Check in Linea and Scroll Buffer Constructors
+12,www-openzeppelin-com-news-linea-yield-manager-audit.pdf,Linea Yield Manager,OpenZeppelin,1,7,22,4360e31f,2026,22,Duplicate Validator Requests DoS Permissionless Unstaking
+13,www-openzeppelin-com-news-openzeppelin-uniswap-hooks-v1-1-0-rc-1-audit.pdf,OpenZeppelin Uniswap Hooks,Openzeppelin,11,4,1,0879747,2025,0,JIT Liquidity Penalty Can Be Bypassed
+14,www-openzeppelin-com-news-sponsored-periphery-audit.pdf,UMAProtocol,OpenZeppelin,4,5,11,ae007ca,2025,17,Incorrect Additional Amount to Send in Sponsored Swaps
+15,www-openzeppelin-com-news-uma-and-across-incremental-audit.pdf,UMA and Across,OpenZeppelin,0,2,5,,2026,5,Invalid destinationDex Can Strand Non-USDC Bridged Funds on Hypercore

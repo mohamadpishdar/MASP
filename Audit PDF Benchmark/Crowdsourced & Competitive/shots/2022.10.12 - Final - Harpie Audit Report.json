@@ -1,0 +1,12 @@
+{
+  "filename": "2022.10.12 - Final - Harpie Audit Report.pdf",
+  "project_identity": "Harpie",
+  "auditor": "Sherlock",
+  "high_vulnerability_count": 0,
+  "medium_vulnerability_count": 9,
+  "low_vulnerability_count": 0,
+  "commit_hash": "97083d",
+  "year": 2022,
+  "fixed_items": "N/A",
+  "first_vulnerability_title": "Use safeTransferFrom() instead of transferFrom() for outgoing erc721 transfers"
+}
