@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "masp-extract"
-version = "0.1.1"
+version = "0.1.2"
 description = "MASP: Multi-Agent Strategic Pipeline for extracting structured vulnerability metadata from smart contract audit reports"
 authors = [
     "Mohammad Pishdar <mohammad.pishdar@kuleuven.be>",
@@ -29,12 +29,10 @@ google-genai = "^0.3"
 google-generativeai = "^0.8"
 openai = "^1.30"
 anthropic = "^0.40"
+streamlit = { version = "^1.30", optional = true }
 
-[tool.poetry.group.ui]
-optional = true
-
-[tool.poetry.group.ui.dependencies]
-streamlit = "^1.30"
+[tool.poetry.extras]
+ui = ["streamlit"]
 
 [tool.poetry.scripts]
 masp = "masp_cli:main"
