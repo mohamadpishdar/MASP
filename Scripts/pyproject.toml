@@ -1,0 +1,44 @@
+[tool.poetry]
+name = "masp-extract"
+version = "0.1.0"
+description = "MASP: Multi-Agent Strategic Pipeline for extracting structured vulnerability metadata from smart contract audit reports"
+authors = [
+    "Mohammad Pishdar <mohammad.pishdar@kuleuven.be>",
+    "Pooya Rostami Mazrae <pooya.rostamimazrae@kuleuven.be>",
+    "Bert Lagaisse <bert.lagaisse@kuleuven.be>",
+]
+license = "MIT"
+readme = "Readme.MD"
+homepage = "https://github.com/mohamadpishdar/MASP"
+repository = "https://github.com/mohamadpishdar/MASP"
+keywords = ["smart-contract-security", "llm", "multi-agent", "audit", "dspy"]
+packages = [
+    { include = "masp_core.py" },
+    { include = "masp_cli.py" },
+    { include = "baseline_core.py" },
+    { include = "baseline_cli.py" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+dspy-ai = "^2.4"
+PyMuPDF = "^1.23"
+pandas = "^2.0"
+openpyxl = "^3.1"
+google-genai = "^0.3"
+openai = "^1.30"
+anthropic = "^0.40"
+
+[tool.poetry.group.ui]
+optional = true
+
+[tool.poetry.group.ui.dependencies]
+streamlit = "^1.30"
+
+[tool.poetry.scripts]
+masp = "masp_cli:main"
+masp-baseline = "baseline_cli:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
