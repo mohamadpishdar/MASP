@@ -8,21 +8,30 @@ Neither MASP nor the single-model baseline included in this repository bundles o
 
 ## Installation
 
+The simplest way to get the extraction engine and both command-line tools is directly from PyPI:
+
+```bash
+pip install masp-extract
+```
+
+This installs the `masp` and `masp-baseline` commands, described below, without needing a local copy of the repository.
+
+To also use the graphical interfaces, or to modify the source, clone the repository instead:
+
 ```bash
 git clone <repository-url>
-cd masp
-pip install -r requirements.txt
+cd masp/Scripts
+pip install .
 ```
 
-`requirements.txt` covers the CLI and the extraction engine itself; a
-headless server running only `masp_cli.py` does not need anything beyond
-it. The graphical interface additionally requires Streamlit:
+Dependencies are declared through Poetry in `pyproject.toml`. A headless server running only `masp` or `masp-baseline` does not need anything beyond the base install. The graphical interfaces additionally require Streamlit, installed with the `ui` extra:
 
 ```bash
-pip install -r requirements-ui.txt
+pip install masp-extract[ui]      # from PyPI
+pip install .[ui]                 # from a local clone
 ```
 
-Neither file installs any local model weights, since none are used.
+Neither installation path installs any local model weights, since none are used.
 
 ## API keys
 
@@ -44,14 +53,15 @@ A key is only required for a provider whose model is actually selected; the tool
 masp_core.py         MASP extraction logic: signatures, the three Miner LM
                       wrappers, the Judge-based MASPHighPrecision engine, demo
                       construction, and the retry-until-complete batch loop.
-MASP_v1.py            Streamlit interface for MASP. Thin wrapper around masp_core.py.
+masp_gui.py           Streamlit interface for MASP. Thin wrapper around masp_core.py.
 masp_cli.py           Command-line interface for MASP, for environments without
-                      a graphical display.
+                      a graphical display. Installed as the `masp` command.
 baseline_core.py      Single-model baseline logic: PDF reading, prompt assembly,
                       the retry wrapper, and the per-provider call_llm dispatch.
-baseline.py           Streamlit interface for the baseline. Thin wrapper around
+baseline_gui.py       Streamlit interface for the baseline. Thin wrapper around
                       baseline_core.py.
-baseline_cli.py       Command-line interface for the baseline.
+baseline_cli.py       Command-line interface for the baseline. Installed as the
+                      `masp-baseline` command.
 ```
 
 Neither `masp_core.py` nor `baseline_core.py` depends on Streamlit, so
@@ -61,19 +71,18 @@ without a graphical display installed.
 ## Usage: graphical interface
 
 ```bash
-streamlit run MASP_v1.py        # multi-agent MASP pipeline
-streamlit run baseline.py       # single-model baseline, for comparison
+streamlit run masp_gui.py        # multi-agent MASP pipeline
+streamlit run baseline_gui.py    # single-model baseline, for comparison
 ```
 
 Each command launches a browser-based interface in which the user selects a folder of PDF audit reports, chooses a model (or, for MASP, a model for each Miner and for the Judge), and starts extraction. Results are written to `./structured/` as an Excel file once processing completes.
 
 ## Usage: command line
 
-The Streamlit interface requires a graphical display and cannot be used on most Linux servers set up for batch processing. `masp_cli.py` runs the same MASP engine without that requirement:
+The Streamlit interface requires a graphical display and cannot be used on most Linux servers set up for batch processing. `masp_cli.py`, installed as the `masp` command, runs the same MASP engine without that requirement:
 
 ```bash
-python masp_cli.py \
-    --input ./input --output ./structured \
+masp --input ./input --output ./structured \
     --miner1 gemini/gemini-2.5-flash \
     --miner2 openrouter/meta-llama/llama-3.3-70b-instruct \
     --miner3 claude/claude-sonnet-5 \
@@ -84,25 +93,25 @@ python masp_cli.py \
 Every option accepted by the CLI, along with its default value, is listed by:
 
 ```bash
-python masp_cli.py --help
+masp --help
 ```
 
 A failing or missing API key does not raise an error inside MASP itself; the affected Miner or Judge simply returns an error string on every document, which can look like an ordinary extraction gap rather than a configuration problem. To rule this out before committing to a full run, check that each configured key actually works:
 
 ```bash
-python masp_cli.py --check-api
+masp --check-api
 ```
 
 This sends one minimal request per provider referenced by `--miner1`, `--miner2`, `--miner3`, and `--judge`, reports which ones succeeded, and exits without processing any documents.
 
 ## Usage: baseline (single model)
 
-The baseline follows the same pattern as MASP: a Streamlit interface for interactive use, and a command-line interface for headless environments.
+The baseline follows the same pattern as MASP: a Streamlit interface for interactive use, and a command-line interface, installed as `masp-baseline`, for headless environments.
 
 ```bash
-streamlit run baseline.py                          # graphical interface
-python baseline_cli.py --input ./input --output ./structured \
-    --model gemini/gemini-2.5-flash --use-shots     # command line
+streamlit run baseline_gui.py                  # graphical interface
+masp-baseline --input ./input --output ./structured \
+    --model gemini/gemini-2.5-flash --use-shots # command line
 ```
 
 `--use-shots` loads the same kind of few-shot reference examples as MASP, from `--shots-dir` (default `./shots`). A custom prompt template can be supplied with `--prompt-file`, pointing to a text file that contains a `{{DOCUMENT}}` placeholder; without it, the built-in default prompt is used. As with MASP, `--check-api` verifies that the configured key for `--model` works before committing to a full run, and `--help` lists every option.
